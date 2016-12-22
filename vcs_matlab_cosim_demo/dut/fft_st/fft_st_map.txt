@@ -1,0 +1,32 @@
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1/dataMEM_re_0_1_32x16b/SimpleDualPortRAM_32x16b --> SimpleDualPortRAM_32x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1/dataMEM_re_0_1_32x16b --> dataMEM_re_0_1_32x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1/dataXMEM_re_1_1_8x16b/SimpleDualPortRAM_8x16b --> SimpleDualPortRAM_8x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1/dataXMEM_re_1_1_8x16b --> dataXMEM_re_1_1_8x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1/Radix2ButterlyF --> Radix2ButterlyF
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_1 --> RADIX2FFT_KernelF_1
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_2/dataMEM_re_0_2_16x16b/SimpleDualPortRAM_16x16b --> SimpleDualPortRAM_16x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_2/dataMEM_re_0_2_16x16b --> dataMEM_re_0_2_16x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_2/Radix2ButterlyF --> Radix2ButterlyF_block
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_2 --> RADIX2FFT_KernelF_2
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_3/ComplexMultiply --> ComplexMultiply
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_3/Radix2ButterlyF --> Radix2ButterlyF_block1
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelF_3 --> RADIX2FFT_KernelF_3
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/dataMEM_re_4x16b/SimpleDualPortRAM_4x16b --> SimpleDualPortRAM_4x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/dataMEM_re_4x16b --> dataMEM_re_4x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/Radix2ButterflyG/ComplexMultiply --> ComplexMultiply_block
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/Radix2ButterflyG --> Radix2ButterflyG
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG --> RADIX2FFT_KernelG
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/Radix2ButterflyG/ComplexMultiply --> ComplexMultiply_block1
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG/Radix2ButterflyG --> Radix2ButterflyG_block
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelG --> RADIX2FFT_KernelG_block
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelL/Radix2ButterflyG/ComplexMultiply --> ComplexMultiply_block2
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelL/Radix2ButterflyG --> Radix2ButterflyG_block1
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_KernelL --> RADIX2FFT_KernelL
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_bitNatural/dataMEM_re_1_64x16b/SimpleDualPortRAM_64x16b --> SimpleDualPortRAM_64x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_bitNatural/dataMEM_re_1_64x16b --> dataMEM_re_1_64x16b
+fft_st/fft_st/FFT HDL Optimized/RADIX2FFT_bitNatural --> RADIX2FFT_bitNatural
+fft_st/fft_st/FFT HDL Optimized --> FFT_HDL_Optimized
+fft_st/fft_st/HDL FIFO/HDL FIFO_ram_128x32b/SimpleDualPortRAM_128x32b --> SimpleDualPortRAM_128x32b
+fft_st/fft_st/HDL FIFO/HDL FIFO_ram_128x32b --> HDL_FIFO_ram_128x32b
+fft_st/fft_st/HDL FIFO --> HDL_FIFO
+fft_st/fft_st --> fft_st

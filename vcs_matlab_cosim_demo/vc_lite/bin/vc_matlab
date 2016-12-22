@@ -1,0 +1,11 @@
+#!/bin/sh
+cd $1
+if [ -f build_dpi.m ]; then
+  matlab -nosplash -nodesktop -r build_dpi
+  echo "#!SV_LIBRARIES" > .vcs.bootstrap
+  find $1 -name "lib*" >> .vcs.bootstrap
+  sed -e 's/.so//' .vcs.bootstrap | tee vcs.bootstrap
+else
+  echo "build_dpi.m not found";
+  exit 1
+fi

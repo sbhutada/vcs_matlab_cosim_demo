@@ -1,0 +1,2 @@
+#!/bin/sh -x
+vlogan -full64 -kdb $*

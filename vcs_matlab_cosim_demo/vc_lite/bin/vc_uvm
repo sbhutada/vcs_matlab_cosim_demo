@@ -1,0 +1,3 @@
+#!/bin/sh -x
+vlogan -full64 -kdb -sverilog -ntb_opts uvm -q
+vlogan -full64 -kdb -sverilog -ntb_opts uvm $*

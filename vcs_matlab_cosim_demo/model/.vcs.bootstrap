@@ -1,0 +1,3 @@
+#!SV_LIBRARIES
+../model/codegen/dll/fft_checker/libfft_checker_dpi.so
+../model/codegen/dll/gen_wave/libgen_wave_dpi.so

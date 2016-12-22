@@ -1,0 +1,3 @@
+#!/bin/sh -x
+rm -rf csrc simv* novas* vc_hdrs.h ucli.key
+rm -rf 64 AN.DB/ verdiLog/ work.lib++ inter.fsdb

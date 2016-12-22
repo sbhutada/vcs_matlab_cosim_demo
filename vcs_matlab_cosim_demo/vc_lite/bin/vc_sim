@@ -1,0 +1,46 @@
+#!/bin/sh
+function usage()
+{
+    echo "To simulate"
+    echo ""
+    echo "vc_sim"
+    echo "  -h --help"
+    echo "  -m=<matlab model dir>"
+    echo "  -R='<vcs sim options>'"
+    echo "  -d"
+    echo ""
+}
+
+sim_opt=""
+
+while [ "$1" != "" ]; do
+    PARAM=`echo $1 | awk -F= '{print $1}'`
+    VALUE=`echo $1 | awk -F= '{print $2}'`
+    case $PARAM in
+        -h)
+            usage
+            exit
+            ;;
+        -R)
+            sim_opt=`echo $VALUE`
+            ;;
+        -t)
+            uvm_opt=`echo +UVM_TESTNAME=$VALUE`
+            ;;
+        -m)
+            model_opt=`echo -sv_liblist $VALUE`/vcs.bootstrap
+            ;;
+        -d)
+            debug_opt=`echo "-verdi +UVM_TR_RECORD +UVM_LOG_RECORD +UVM_VERDI_TRACE=UVM_AWARE+HIER+TLM"`
+            ;;
+        *)
+            echo "ERROR: unknown parameter \"$PARAM\""
+            usage
+            exit 1
+            ;;
+    esac
+    shift
+done
+
+echo simv $sim_opt $uvm_opt $debug_opt $model_opt
+simv $sim_opt $uvm_opt $debug_opt $model_opt

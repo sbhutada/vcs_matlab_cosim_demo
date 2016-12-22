@@ -1,0 +1,41 @@
+#!/bin/sh
+function usage()
+{
+    echo "To elaborate"
+    echo ""
+    echo "vc_elab"
+    echo "  -h --help"
+    echo "  -t=top"
+    echo "  -R='<vcs elab options>'"
+    echo "  -d"
+    echo ""
+}
+
+while [ "$1" != "" ]; do
+    PARAM=`echo $1 | awk -F= '{print $1}'`
+    VALUE=`echo $1 | awk -F= '{print $2}'`
+    case $PARAM in
+        -h)
+            usage
+            exit
+            ;;
+        -R)
+            vcs_opt=`echo $VALUE`
+            ;;
+        -t)
+            top_opt=`echo $top_opt $VALUE`
+            ;;
+        -d)
+            debug_opt=`echo "-debug_access+all"`
+            ;;
+        *)
+            echo "ERROR: unknown parameter \"$PARAM\""
+            usage
+            exit 1
+            ;;
+    esac
+    shift
+done
+
+echo vcs -full64 -kdb -lca -ntb_opts uvm $debug_opt $vcs_opt $top_opt
+vcs -full64 -kdb -lca -ntb_opts uvm $debug_opt $vcs_opt $top_opt
