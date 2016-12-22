@@ -13,7 +13,7 @@ met:
       the documentation and/or other materials provided with the distribution.
     * In all cases, the software is, and all modifications and derivatives
       of the software shall be, licensed to you solely for use in conjunction
-      with MathWorks products and service offerings.
+      with Synopsys and MathWorks products and service offerings.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
